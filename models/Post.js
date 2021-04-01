@@ -9,7 +9,7 @@ const PostSchema = mongoose.Schema({
     description: {
         type: String,
         required: true
-    },
+    }
     // date: {
     //     type: Date,
     //     required: Date.now
@@ -17,9 +17,9 @@ const PostSchema = mongoose.Schema({
 });
 
 
-mongoose.Schema({
-    username: String,
-    password: String
-})
+// mongoose.Schema({
+//     username: String,
+//     password: String
+// })
 
 module.exports = mongoose.model('Posts', PostSchema);
