@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 const postsRoute = require('./routes/posts');
 app.use('/posts', postsRoute);
 
-mongoose.connect(process.env.MONGO_URI,
+mongoose.connect(
+'mongodb+srv://tamaghno:tamaghno@cluster0.aiha3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
 { useNewUrlParser: true },
 { useUnifiedTopology: true })
 .then(()=> console.log('DB connected'))
