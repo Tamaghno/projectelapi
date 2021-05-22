@@ -2,12 +2,20 @@ const mongoose = require('mongoose');
 
 
 const PostSchema = mongoose.Schema({
-    title: {
+    word: {
         type: String,
         required: true
     },
-    description: {
+    jword: {
         type: String,
+        required: true
+    },
+    imglink: {
+        type: String,
+        required: true
+    },
+    n: {
+        type: Number,
         required: true
     }
     // date: {
